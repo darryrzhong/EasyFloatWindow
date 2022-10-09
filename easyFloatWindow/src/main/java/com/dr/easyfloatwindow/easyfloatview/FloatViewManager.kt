@@ -141,7 +141,6 @@ import android.widget.FrameLayout
             }
             x = desX
         }
-        //限制不可超出屏幕高度
         // 限制不可超出屏幕高度
         var desY = mOriginalY + event.rawY - mOriginalRawY
         if (layoutParams.height == LayoutParams.WRAP_CONTENT) {

@@ -23,20 +23,20 @@ import java.lang.ref.WeakReference
 class FloatController private constructor() : IFloatController {
     private var mFloatView: FloatViewManager? = null
     private var mContainer: WeakReference<FrameLayout>? = null
-    private var mLayoutParams: ViewGroup.LayoutParams = generateLayoutParams()
+    private var mLayoutParams: FrameLayout.LayoutParams = generateLayoutParams()
 
 
     companion object {
         fun newInstance(): FloatController = FloatController()
     }
 
-    private fun generateLayoutParams(): ViewGroup.LayoutParams {
+    private fun generateLayoutParams(): FrameLayout.LayoutParams {
         val params = FrameLayout.LayoutParams(
             RelativeLayout.LayoutParams.WRAP_CONTENT,
             RelativeLayout.LayoutParams.WRAP_CONTENT
         )
-        params.gravity = Gravity.BOTTOM or Gravity.START
-        params.setMargins(13, params.topMargin, params.rightMargin, 500)
+        params.gravity = Gravity.BOTTOM or Gravity.END
+        params.setMargins(params.marginStart, params.topMargin, 15, 200)
         return params
     }
 
@@ -103,7 +103,7 @@ class FloatController private constructor() : IFloatController {
         mFloatView = view
     }
 
-    override fun layoutParams(params: ViewGroup.LayoutParams) {
+    override fun layoutParams(params: FrameLayout.LayoutParams) {
         mLayoutParams = params
         mFloatView?.layoutParams = mLayoutParams
     }

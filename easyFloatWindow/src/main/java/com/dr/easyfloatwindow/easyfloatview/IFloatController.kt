@@ -32,7 +32,7 @@ interface IFloatController {
     fun customView(view: FloatViewManager)
 
 
-    fun layoutParams(params: ViewGroup.LayoutParams)
+    fun layoutParams(params: FrameLayout.LayoutParams)
 
     fun dragEnable(dragEnable: Boolean)
 

@@ -12,7 +12,7 @@ import android.view.View
  *     @since   : 2022/09/30
  * </pre>
  */
- fun View.getStatusBarHeight(): Int {
+fun View.getStatusBarHeight(): Int {
     var height = 0
     val resourceId =
         context.getResources().getIdentifier("status_bar_height", "dimen", "android")
@@ -22,7 +22,7 @@ import android.view.View
     return height
 }
 
- fun View.getScreenWidth(context: Context): Int {
+fun View.getScreenWidth(context: Context): Int {
     var screenWith = -1
     try {
         screenWith = context.resources.displayMetrics.widthPixels
