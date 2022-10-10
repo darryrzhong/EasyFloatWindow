@@ -18,7 +18,7 @@ import android.widget.FrameLayout
  *     @since   : 2022/09/30
  * </pre>
  */
- open class FloatViewManager @JvmOverloads constructor(
+open class FloatViewManager @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null
 ) : FrameLayout(context, attrs) {
 
@@ -74,18 +74,13 @@ import android.widget.FrameLayout
                     if (autoMoveToEdge) {
                         moveToEdge()
                     }
-                    if (isOnClickEvent()) {
-                        dealClickEvent()
-                    }
+
                 }
             }
             return true
         } ?: return false
     }
 
-    private fun dealClickEvent() {
-
-    }
 
     private fun moveToEdge() {
         //dragEnable
@@ -112,10 +107,6 @@ import android.widget.FrameLayout
         val middle = mScreenWidth / 2
         isNearestLeft = x < middle
         return isNearestLeft
-    }
-
-    private fun isOnClickEvent(): Boolean {
-        return System.currentTimeMillis() - mLastTouchDownTime < TOUCH_TIME_THRESHOLD
     }
 
 
