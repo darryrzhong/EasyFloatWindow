@@ -94,6 +94,7 @@ class EasyFloatWindow private constructor() : Application.ActivityLifecycleCallb
 
     }
 
+
     private fun isActivityInValid(activity: Activity): Boolean {
         return blackList.contains(activity::class.java)
     }

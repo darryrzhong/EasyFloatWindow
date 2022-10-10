@@ -15,9 +15,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<Button>(R.id.bt_add).setOnClickListener {
-            EasyFloatWindow.instance.setContentView(this, R.layout.layout_float_view1)
+//            EasyFloatWindow.instance.setContentView(this, R.layout.layout_float_view1)
+//                .dragEnable(true).setAutoMoveToEdge(true).show(this)
+            EasyFloatWindow.instance.setContentView(FloatCustomView(this))
                 .dragEnable(true).setAutoMoveToEdge(true).show(this)
         }
+
 
 
         findViewById<Button>(R.id.bt_remove).setOnClickListener {

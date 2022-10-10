@@ -3,6 +3,7 @@ package com.dr.easyfloatwindow.easyfloatview
 import android.R
 import android.app.Activity
 import android.content.Context
+import android.util.Log
 import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
@@ -92,7 +93,7 @@ class FloatController private constructor() : IFloatController {
         if (mFloatView != null && container != null && ViewCompat.isAttachedToWindow(mFloatView!!)) {
             container.removeView(mFloatView)
         }
-        if (getContainer() != null) {
+        if (getContainer() == container) {
             mContainer = null
         }
     }
