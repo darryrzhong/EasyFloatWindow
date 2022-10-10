@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.dr.easyfloatwindow.EasyFloatWindow
+import kotlinx.coroutines.CoroutineName
+import kotlinx.coroutines.MainScope
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,5 +27,8 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.next).setOnClickListener {
             startActivity(Intent(this, OneActivity::class.java))
         }
+
+
     }
+
 }
