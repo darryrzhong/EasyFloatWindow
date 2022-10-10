@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-
         findViewById<Button>(R.id.bt_remove).setOnClickListener {
             EasyFloatWindow.instance.dismiss(this)
         }

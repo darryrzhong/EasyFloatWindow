@@ -17,7 +17,7 @@
         android:layout_height="100dp"
         app:lottie_autoPlay="true"
         app:lottie_repeatCount="-1"
-        app:lottie_url="https://assets4.lottiefiles.com/packages/lf20_aFS9yjD5Yj.json" />
+        app:lottie_url="https://assets3.lottiefiles.com/packages/lf20_6FYRYX8fKd.json" />
 
 
 </FrameLayout>
