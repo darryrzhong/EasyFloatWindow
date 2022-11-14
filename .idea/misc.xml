@@ -6,6 +6,9 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.353125" />
         <entry key="app/src/main/res/layout/activity_one.xml" value="0.35208333333333336" />
         <entry key="app/src/main/res/layout/activity_tow.xml" value="0.35208333333333336" />
+        <entry key="app/src/main/res/layout/activity_view_page.xml" value="0.35208333333333336" />
+        <entry key="app/src/main/res/layout/fragment_child_layout.xml" value="0.353125" />
+        <entry key="app/src/main/res/layout/fragment_layout.xml" value="0.353125" />
         <entry key="app/src/main/res/layout/layout_custom_float.xml" value="0.35208333333333336" />
         <entry key="app/src/main/res/layout/layout_float_custom.xml" value="0.35208333333333336" />
         <entry key="app/src/main/res/layout/layout_float_view1.xml" value="0.35208333333333336" />

@@ -17,7 +17,7 @@
         android:theme="@style/Theme.EasyAppFloatWindow"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".test.ViewPager2Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
